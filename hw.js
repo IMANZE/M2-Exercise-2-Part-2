@@ -16,6 +16,15 @@ console.log(me);
 Write a piece of code to create an array of only ODD numbers from 1 to 100
  */
 
+let numArray = [];
+for (let index = 1; index <= 100 ; index++) {
+  if (index % 2 === 1) {
+     numArray.push(index);
+  };
+  
+}
+console.log(numArray);
+
 /* EXERCISE 3
 Write a piece of code to create an array of 10 elements of random numbers in the range from 0 to 100 inclusive
  */
