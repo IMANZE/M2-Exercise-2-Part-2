@@ -29,6 +29,13 @@ console.log(numArray);
 Write a piece of code to create an array of 10 elements of random numbers in the range from 0 to 100 inclusive
  */
 
+let randomNum = [];
+while(randomNum.length < 10){
+    let r = Math.floor(Math.random() * 101);
+    if(randomNum.indexOf(r) === -1) randomNum.push(r);
+}
+console.log(randomNum);
+
 /* EXERCISE 4
   Write a piece of code for getting only even numerical values from an array . 
  */
