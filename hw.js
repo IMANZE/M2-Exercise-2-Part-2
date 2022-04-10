@@ -40,6 +40,18 @@ console.log(randomNum);
   Write a piece of code for getting only even numerical values from an array . 
  */
 
+  let givenArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "Olu"];
+ 
+  let evenNumber = [];
+  
+  for (let i = 0; i < givenArray.length; i++) {
+    if (typeof givenArray[i] === "number" && givenArray[i] % 2 === 0) {
+      evenNumber.push(givenArray[i]);
+    }
+  }
+  
+  console.log(evenNumber);
+
 /* EXERCISE 5
 Write a piece of code to sum up the numbers in an array
  */
