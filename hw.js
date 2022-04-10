@@ -74,12 +74,21 @@ for (let i = 0; i < numberIncrease.length; i++) {
     numberIncrease[i]++;
   }
 }
-
+console.log(numberIncrease);
 
 
 /* EXERCISE 7 (EXTRA)
  Write a piece of code for deleting only even entries from an array.
-*/
+ */
+
+const evenNumbersDeleted = [1, 2, 3, 4, 5, 6, 8, 9, "Olu"];
+for (let i = 0; i < evenNumbersDeleted.length; i++) {
+  if (typeof evenNumbersDeleted[i] === "number" && evenNumbersDeleted[i] % 2 === 1) {
+    evenNumbersDeleted.splice(i, 1);
+    i--;
+  } 
+}
+console.log(evenNumbersDeleted);
 
 /* EXERCISE 8
 Write a piece of code to create an array of 10 elements of random numbers in the range from 0 to 10 inclusive WITHOUT duplicates
