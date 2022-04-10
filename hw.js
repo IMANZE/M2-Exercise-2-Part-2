@@ -132,6 +132,12 @@ console.log(arra);
  Write a piece of code for getting the maximum numerical value from an array.
 */
 
+let maxNumArray = [1, 4, 10, 20, 30, 0, 5, 100];
+let maxValue = maxNumArray[0];
+for (let i = 1; i < maxNumArray.length; i++) {
+  if (maxNumArray[i] > maxValue) maxValue = maxNumArray[i];
+}
+console.log(maxValue);
 
 /* This movies array is used throughout the exercises. You're not supposed to alter it. */
 const movies = [
