@@ -94,6 +94,18 @@ console.log(evenNumbersDeleted);
 Write a piece of code to create an array of 10 elements of random numbers in the range from 0 to 10 inclusive WITHOUT duplicates
  */
 
+let ranNum = [];
+
+while(ranNum.length < 10){
+    let r = Math.floor(Math.random() * 11);
+    if(ranNum.indexOf(r) === -1) ranNum.push(r);
+    
+}
+console.log(ranNum);
+
+
+
+
 /* EXERCISE 9
  Replace all the strings contained in an array with their length.
  es.: ["strive", "is", "great"] => [6, 2, 5]
