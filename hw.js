@@ -40,7 +40,7 @@ console.log(randomNum);
   Write a piece of code for getting only even numerical values from an array . 
  */
 
-  let givenArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "Olu"];
+  const givenArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "Olu"];
  
   let evenNumber = [];
   
@@ -56,9 +56,26 @@ console.log(randomNum);
 Write a piece of code to sum up the numbers in an array
  */
 
+const array = [1, 2, 3, 10];
+let sum = 0;
+
+for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+}
+console.log(sum);
+
 /* EXERCISE 6
  Write a piece of code for increasing all the numerical values in a array by 1.
 */
+
+let numberIncrease = [1,2,3,4,5, "Olu"];
+for (let i = 0; i < numberIncrease.length; i++) {
+  if (typeof numberIncrease[i] === "number")  {
+    numberIncrease[i]++;
+  }
+}
+
+
 
 /* EXERCISE 7 (EXTRA)
  Write a piece of code for deleting only even entries from an array.
