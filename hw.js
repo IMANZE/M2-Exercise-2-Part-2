@@ -85,7 +85,6 @@ const evenNumbersDeleted = [1, 2, 3, 4, 5, 6, 8, 9, "Olu"];
 for (let i = 0; i < evenNumbersDeleted.length; i++) {
   if (typeof evenNumbersDeleted[i] === "number" && evenNumbersDeleted[i] % 2 === 1) {
     evenNumbersDeleted.splice(i, 1);
-    i--;
   } 
 }
 console.log(evenNumbersDeleted);
@@ -98,8 +97,7 @@ let ranNum = [];
 
 while(ranNum.length < 10){
     let r = Math.floor(Math.random() * 11);
-    if(ranNum.indexOf(r) === -1) ranNum.push(r);
-    
+    if(ranNum.indexOf(r) === -1) ranNum.push(r);   
 }
 console.log(ranNum);
 
@@ -114,6 +112,8 @@ for (let i = 0; i < replace.length; i++) {
  replace[i] = replace[i].length;
 }
 console.log(replace);
+
+
 
 /* EXERCISE 10
  Write a piece of code for reverting an array.
