@@ -104,12 +104,16 @@ while(ranNum.length < 10){
 console.log(ranNum);
 
 
-
-
 /* EXERCISE 9
  Replace all the strings contained in an array with their length.
  es.: ["strive", "is", "great"] => [6, 2, 5]
 */
+
+let replace = ["strive", "is", "great"];
+for (let i = 0; i < replace.length; i++) {
+ replace[i] = replace[i].length;
+}
+console.log(replace);
 
 /* EXERCISE 10
  Write a piece of code for reverting an array.
