@@ -134,7 +134,7 @@ console.log(arra);
 
 let maxNumArray = [1, 4, 10, 20, 30, 0, 5, 100];
 let maxValue = maxNumArray[0];
-for (let i = 1; i < maxNumArray.length; i++) {
+for (let i = 0; i < maxNumArray.length; i++) {
   if (maxNumArray[i] > maxValue) maxValue = maxNumArray[i];
 }
 console.log(maxValue);
