@@ -120,10 +120,18 @@ console.log(replace);
  es:
  [1, 3, 5] ==> [5, 3, 1]
 */
+let arra = [1, 2, 3, 4, 5];
+for (let i = 0; i < arra.length / 2; i++) {
+  let revert = arra[i]; 
+  arra[i] = arra[arra.length - i - 1]; 
+  arra[arra.length - i - 1] = revert;
+}
+console.log(arra);
 
 /* EXERCISE 11
  Write a piece of code for getting the maximum numerical value from an array.
 */
+
 
 /* This movies array is used throughout the exercises. You're not supposed to alter it. */
 const movies = [
