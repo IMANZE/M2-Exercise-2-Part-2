@@ -132,10 +132,11 @@ console.log(arra);
  Write a piece of code for getting the maximum numerical value from an array.
 */
 
-let maxNumArray = [1, 4, 10, 20, 30, 0, 5, 100];
-let maxValue = maxNumArray[0];
+let maxNumArray = [1, 4, 10, 20, 200, 0, 5, 100];
+let maxValue = 0;
 for (let i = 0; i < maxNumArray.length; i++) {
-  if (maxNumArray[i] > maxValue) maxValue = maxNumArray[i];
+  if (maxNumArray[i] > maxValue) {maxValue = maxNumArray[i];
+  }
 }
 console.log(maxValue);
 
@@ -258,6 +259,8 @@ const movies = [
 /* EXERCISE 12
     Write a piece of code to  find the oldest movie in the provided movies array.
 */
+
+
 
 /* EXERCISE 13
     Write a piece of code to get the number of movies contained in the provided movies array.
