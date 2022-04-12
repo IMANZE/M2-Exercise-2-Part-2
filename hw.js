@@ -273,6 +273,8 @@ for (let i = 0; i < movies.length; i++) {
     Write a piece of code to get the number of movies contained in the provided movies array.
 */
 
+const total = movies.length;
+
 /* EXERCISE 14
     Write a piece of code to create an array with just the titles of the movies contained in the provided movies array.
 */
