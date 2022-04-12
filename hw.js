@@ -260,7 +260,14 @@ const movies = [
     Write a piece of code to  find the oldest movie in the provided movies array.
 */
 
-
+let maxYear = parseInt(movies[0].Year);
+let oldestMovie;
+for (let i = 0; i < movies.length; i++) {
+  const parsedYear = parseInt(movies[i].Year); // parse string to number
+  if (parsedYear > maxYear) {
+    oldestMovie = movies[i];
+  }
+}
 
 /* EXERCISE 13
     Write a piece of code to get the number of movies contained in the provided movies array.
