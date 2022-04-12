@@ -323,3 +323,12 @@ console.log(yearsSum);
 /* EXERCISE 18
    Write a piece of code to get  all the movies in the provided movies array which contain the string value (provided below) in the title.
 */
+const query = "Ring";
+const result = [];
+for (let i = 0; i < movies.length; i++) {
+  if (movies[i].Title.includes(query)) {
+    result.push(movies[i]);
+  }
+}
+
+console.log(result);
