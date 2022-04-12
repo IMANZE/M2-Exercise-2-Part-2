@@ -289,6 +289,14 @@ console.log(titles);
    Write a piece of code to get only the movies produced in this millennium from the provided movies array.
 */
 
+const thisMil = [];
+for (let i = 0; i < movies.length; i++) {
+  if (parseInt(movies[i].Year) > 2000) {
+    thisMil.push(movies[i]);
+  }
+}
+console.log(thisMil);
+
 /* EXERCISE 16
    Write a piece of code to get  the movie with the  id given below from the provided movies array.
 */
