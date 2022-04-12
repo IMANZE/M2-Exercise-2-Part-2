@@ -302,6 +302,14 @@ console.log(thisMil);
 */
 const id = "tt0355702";
 
+let movieById;
+for (let i = 0; i < movies.length; i++) {
+  if (movies[i].imdbID === id) {
+    movieById = movies[i];
+    break;
+  }
+}
+
 /* EXERCISE 17
      Write a piece of code to get  the  the sum of all the years in which the movies in the provided movies array have been produced.
 */
