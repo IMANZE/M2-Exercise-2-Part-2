@@ -120,22 +120,26 @@ console.log(replace);
  es:
  [1, 3, 5] ==> [5, 3, 1]
 */
-let arra = [1, 2, 3, 4, 5];
+
 for (let i = 0; i < arra.length / 2; i++) {
-  let revert = arra[i]; 
-  arra[i] = arra[arra.length - i - 1]; 
+  let 1 = arra[0]; 
+
+  arra[0] = arra[arra.length - 0 - 1]; 
   arra[arra.length - i - 1] = revert;
 }
 console.log(arra);
+
 
 /* EXERCISE 11
  Write a piece of code for getting the maximum numerical value from an array.
 */
 
 let maxNumArray = [1, 4, 10, 20, 200, 0, 5, 100];
-let maxValue = 0;
-for (let i = 0; i < maxNumArray.length; i++) {
-  if (maxNumArray[i] > maxValue) {maxValue = maxNumArray[i];
+let maxValue = maxNumArray[0];
+
+for (let i = 1; i < maxNumArray.length; i++) {
+  if (maxNumArray[i] > maxValue) {
+    maxValue = maxNumArray[i];
   }
 }
 console.log(maxValue);
