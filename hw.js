@@ -121,13 +121,26 @@ console.log(replace);
  [1, 3, 5] ==> [5, 3, 1]
 */
 
-for (let i = 0; i < arra.length / 2; i++) {
-  let 1 = arra[0]; 
-
-  arra[0] = arra[arra.length - 0 - 1]; 
-  arra[arra.length - i - 1] = revert;
-}
+let arra = [1, 2, 3, 4, 5];
+arra.reverse();
 console.log(arra);
+
+//Another method
+// for (let i = 0; i < arra.length / 2; i++) {
+//   let revert = arra[0]; 
+
+//   arra[0] = arra[arra.length - 0 - 1]; 
+//   arra[arra.length - i - 1] = revert;
+// }
+// console.log(arra);
+
+//Another method
+// let copy = []
+// for (let i = arra.length - 1; i>= 0; i--) {
+//   copy[i] = arra[i]
+// }
+
+// console.log(copy)
 
 
 /* EXERCISE 11
