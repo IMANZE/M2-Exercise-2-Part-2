@@ -314,6 +314,12 @@ for (let i = 0; i < movies.length; i++) {
      Write a piece of code to get  the  the sum of all the years in which the movies in the provided movies array have been produced.
 */
 
+let yearsSum = 0;
+for (let i = 0; i < movies.length; i++) {
+  yearsSum = yearsSum + parseInt(movies[i].Year);
+}
+console.log(yearsSum);
+
 /* EXERCISE 18
    Write a piece of code to get  all the movies in the provided movies array which contain the string value (provided below) in the title.
 */
