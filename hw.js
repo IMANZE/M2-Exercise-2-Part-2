@@ -8,20 +8,18 @@ const me = {
   skills: ["javascript", "html", "css"],
 };
 
-const me2 = me.skills.pop()
+const me2 = me.skills.pop();
 console.log(me);
-
 
 /* EXERCISE 2
 Write a piece of code to create an array of only ODD numbers from 1 to 100
  */
 
 let numArray = [];
-for (let index = 1; index <= 100 ; index++) {
+for (let index = 1; index <= 100; index++) {
   if (index % 2 === 1) {
-     numArray.push(index);
-  };
-  
+    numArray.push(index);
+  }
 }
 console.log(numArray);
 
@@ -30,9 +28,9 @@ Write a piece of code to create an array of 10 elements of random numbers in the
  */
 
 let randomNum = [];
-while(randomNum.length < 10){
-    let r = Math.floor(Math.random() * 101);
-    if(randomNum.indexOf(r) === -1) randomNum.push(r);
+while (randomNum.length < 10) {
+  let r = Math.floor(Math.random() * 101);
+  if (randomNum.indexOf(r) === -1) randomNum.push(r);
 }
 console.log(randomNum);
 
@@ -40,17 +38,17 @@ console.log(randomNum);
   Write a piece of code for getting only even numerical values from an array . 
  */
 
-  const givenArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "Olu"];
- 
-  let evenNumber = [];
-  
-  for (let i = 0; i < givenArray.length; i++) {
-    if (typeof givenArray[i] === "number" && givenArray[i] % 2 === 0) {
-      evenNumber.push(givenArray[i]);
-    }
+const givenArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "Olu"];
+
+let evenNumber = [];
+
+for (let i = 0; i < givenArray.length; i++) {
+  if (typeof givenArray[i] === "number" && givenArray[i] % 2 === 0) {
+    evenNumber.push(givenArray[i]);
   }
-  
-  console.log(evenNumber);
+}
+
+console.log(evenNumber);
 
 /* EXERCISE 5
 Write a piece of code to sum up the numbers in an array
@@ -60,7 +58,7 @@ const array = [1, 2, 3, 10];
 let sum = 0;
 
 for (let i = 0; i < array.length; i++) {
-    sum += array[i];
+  sum += array[i];
 }
 console.log(sum);
 
@@ -68,14 +66,13 @@ console.log(sum);
  Write a piece of code for increasing all the numerical values in a array by 1.
 */
 
-let numberIncrease = [1,2,3,4,5, "Olu"];
+let numberIncrease = [1, 2, 3, 4, 5, "Olu"];
 for (let i = 0; i < numberIncrease.length; i++) {
-  if (typeof numberIncrease[i] === "number")  {
+  if (typeof numberIncrease[i] === "number") {
     numberIncrease[i]++;
   }
 }
 console.log(numberIncrease);
-
 
 /* EXERCISE 7 (EXTRA)
  Write a piece of code for deleting only even entries from an array.
@@ -83,9 +80,12 @@ console.log(numberIncrease);
 
 const evenNumbersDeleted = [1, 2, 3, 4, 5, 6, 8, 9, "Olu"];
 for (let i = 0; i < evenNumbersDeleted.length; i++) {
-  if (typeof evenNumbersDeleted[i] === "number" && evenNumbersDeleted[i] % 2 === 1) {
+  if (
+    typeof evenNumbersDeleted[i] === "number" &&
+    evenNumbersDeleted[i] % 2 === 1
+  ) {
     evenNumbersDeleted.splice(i, 1);
-  } 
+  }
 }
 console.log(evenNumbersDeleted);
 
@@ -95,12 +95,11 @@ Write a piece of code to create an array of 10 elements of random numbers in the
 
 let ranNum = [];
 
-while(ranNum.length < 10){
-    let r = Math.floor(Math.random() * 11);
-    if(ranNum.indexOf(r) === -1) ranNum.push(r);   
+while (ranNum.length < 10) {
+  let r = Math.floor(Math.random() * 11);
+  if (ranNum.indexOf(r) === -1) ranNum.push(r);
 }
 console.log(ranNum);
-
 
 /* EXERCISE 9
  Replace all the strings contained in an array with their length.
@@ -109,11 +108,9 @@ console.log(ranNum);
 
 let replace = ["strive", "is", "great"];
 for (let i = 0; i < replace.length; i++) {
- replace[i] = replace[i].length;
+  replace[i] = replace[i].length;
 }
 console.log(replace);
-
-
 
 /* EXERCISE 10
  Write a piece of code for reverting an array.
@@ -127,9 +124,9 @@ console.log(arra);
 
 //Another method
 // for (let i = 0; i < arra.length / 2; i++) {
-//   let revert = arra[0]; 
+//   let revert = arra[0];
 
-//   arra[0] = arra[arra.length - 0 - 1]; 
+//   arra[0] = arra[arra.length - 0 - 1];
 //   arra[arra.length - i - 1] = revert;
 // }
 // console.log(arra);
@@ -141,7 +138,6 @@ console.log(arra);
 // }
 
 // console.log(copy)
-
 
 /* EXERCISE 11
  Write a piece of code for getting the maximum numerical value from an array.
